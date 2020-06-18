@@ -1,2 +1,2 @@
 Runs on live server.
-A simple cullular simiulation, using autonomous agents.
+An autonomous agent simiulation with flocking group behaviours.
