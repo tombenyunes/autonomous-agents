@@ -765,27 +765,3 @@ function ageing() {   // (called every 4 seconds)
     aggressiveCells[i].radius -= (1 * ageMult);   // ageMult scales as the cell grows, meaning the cell will age faster as it gains more mass
   }
 }
-
-
-
-
-
-/*
-------------------------------------------------------
-Which assessment did you attempt?
-My project uses autonomous agents.
-
-------------------------------------------------------
-What effect were you trying to achieve?
-I wanted to create an ecosystem with a dynamic sense of life to it, in which you could look at any entity and would be able to tell exactly what it was doing and why it was doing it. I also wanted to create a sense of individual autonomy, such that all agents would behave and interact with each other in unique ways. I opted for a minimalistic cell-like aesthetic in which the main ('passive') cells would interact with each other in complex grouping behaviours and collect food to grow their mass. I experimented with the idea of having a singular 'threat' to the passive cells and settled on a singular black-hole inspired 'aggressive' cell. I wanted this to result in the viewer constantly re-evaluating 'who will survive', however ultimately I aimed for a balanced ecosystem in which both species' would coexist. While I have mainly balanced for only one aggressive cell by default, there is full support for multiple of them.
-
-------------------------------------------------------
-How does your code achieve this?
-I used many graphical features so as to reflect the state and behaviour of the agents, such as the stroke values for the aggressive cell, and lines showing what the agent can see and is moving towards. In order to create a sense of individual autonomy, I had 'passive' agents incorporate physics-based movement and utilise complex flocking-like mechanics in order to form groups and align with each other. I extended to this, and added new weighted behaviours, such that an agent might prioritise food instead of escaping a threat. To create a balanced ecosystem, I added dynamic rules that would influence the speed, mass gain, sight range, ageing rate, etc, of the 'aggressive' agent, so as to avoid the aggressor being the winner every time. This constant tweaking of properties means that, although the environment will not remain balanced forever, it will last long enough that there is no clear winner every time. In addition another way I created a sense of autonomy was by having all passive agents spawn with unique statistics - some with higher speed, some smaller.
-
-------------------------------------------------------
-What are you happy with? What could be improved?
-I am satisfied that I was able to create a semi-sustainable ecosystem and I am happy with my implementation of flocking mechanics and behaviour weighting. I am also pleased with the overall visual aesthetic, particularly the background trail effect, created when a cell is eaten, along with the variation of cell fill values based on where a cell is in the environment.
-While I'm mostly happy with how my project turned out, there are some issues that I struggled with. One of the most notable ones was performance. Due to the intensity of running potentially hundreds of agents concurrently, I did find I had to make some optimisations, including introducing some artificial constraints to my project, such as a cell limit, which is something that I was not intending on doing. Another issue I had was imlementing the physics mechanics. This required me to overhaul large parts of my code, as I had previously written my code without this intention. Finally, it was a challenge to balance the ecosystem to the extent that both species were able to coexist.
-Besides this, I am very happy with how my Generative Art turned out.
-*/
